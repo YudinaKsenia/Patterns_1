@@ -10,9 +10,8 @@ build: off
 
 install:
 
-  - java -jar ./artifacts/app-replan-delivery.jar
+  - java -jar ./artifacts/app-replan-delivery.jar &
   - chmod +x gradlew
 
 build_script:
-
   - ./gradlew test --info -Dselenide.headless=true
